@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style type="text/css">
+        .intro-section {
+            color: black;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #003366;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+
+    .column {
+      flex: 0 0 48%;
+      margin-bottom: 30px;
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .column h3 {
+      margin-bottom: 10px;
+      color: #002244;
+    }
+
+    .column p {
+      margin: 5px 0;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .column {
+        flex: 0 0 100%;
+      }
+    }
+
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand me-5" th:href="@{/}">Ecommerce App</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item me-5">
+                    <a class="nav-link active" aria-current="page" th:href="@{/home}">Home</a>
+                </li>
+                <li class="nav-item me-5">
+                    <a class="nav-link" th:href="@{/aboutUs}">About Us</a>
+                </li>
+                <li class="nav-item me-5">
+                    <a class="nav-link" th:href="@{/job}">Job</a>
+                </li>
+                <li class="nav-item me-5">
+                    <a class="nav-link" th:href="@{/contactUs}">Contact Us</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <a th:href="@{/login}" class="btn btn-success">Login</a>
+            </form>
+        </div>
+    </div>
+</nav>
+<br>
+<br>
+
+<div class="container">
+    <h2>Contact Us - JobConnect</h2>
+
+    <div class="row">
+        <div class="column">
+            <h3>JobConnect HQ Office</h3>
+            <p>3rd Floor, Main Street,</p>
+            <p>Tidel Park Road, Adyar, Chennai</p>
+            <p>Tamil Nadu – 600020</p>
+            <p><strong>Phone:</strong> +91-44-1234 5678</p>
+            <p><strong>Email:</strong> info@jobconnect.com</p>
+            <p><strong>Working Hours:</strong> 9:30 AM – 6:00 PM</p>
+        </div>
+
+        <div class="column">
+            <h3>Development Center</h3>
+            <p>JobConnect Tech Campus</p>
+            <p>Rajiv Gandhi IT Expressway (OMR)</p>
+            <p>Kelambakkam, Chennai – 603110</p>
+            <p><strong>Phone:</strong> +91-44-9876 5432</p>
+            <p><strong>Email:</strong> support@jobconnect.com</p>
+            <p><strong>Working Hours:</strong> 8:00 AM – 3:30 PM</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h3>Placement Cell</h3>
+            <p>Placement Manager, JobConnect</p>
+            <p>2nd Floor, Talent Division</p>
+            <p>Chennai – 603110</p>
+            <p><strong>Email:</strong> placements@jobconnect.com</p>
+        </div>
+
+        <div class="column">
+            <h3>Alumni Relations</h3>
+            <p>Alumni Officer, JobConnect</p>
+            <p>Career Development Wing</p>
+            <p>Chennai – 603110</p>
+            <p><strong>Email:</strong> alumni@jobconnect.com</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
